@@ -19,9 +19,19 @@ header{
   margin: 0 0 20px 100px;
 }
 
+@media (max-width: 600px) {
+  .list-inline{
+    display: none;
+  }
+
+  .heading{
+    margin: 0 0 20px 30px;
+  }
+}
+
 .container{
   background-color: #212121;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 ul{
@@ -42,7 +52,7 @@ li{
 img{
   width: 50%;
   height: 100%;
-  /* clip-path: polygon(0 0, 100% 0%, 57% 100%, 0% 100%); */
+  clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
   -webkit-clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
 }
 
@@ -51,4 +61,42 @@ img{
   float: right;
   margin-right: 200px; 
   color:#E5E5E5
+}
+
+.caption > span {
+  margin-bottom:20px;
+  font-size:1.8em;
+  display: block
+}
+
+.caption > p {
+  width: 500px; 
+  text-align: justify;
+}
+
+@media (max-width:600px){
+  img{
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  }
+
+  .caption{
+    margin-top: 0;
+    float: none;
+    margin-right: 0px; 
+    color:#E5E5E5;
+    background-color: #212121;
+  }
+
+  .caption > span {
+    text-align: center;
+  }
+
+  .caption > p {
+    width: 350px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 55px;
+  }
 }
