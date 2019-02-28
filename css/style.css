@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+/* ::-webkit-scrollbar {
+  height: 5px;
+  width: 12px;
+  background: #E5E5E5;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 12px;
+  width: 12px;
+  background: #212121;
+} */
+
+
 *{
   margin:0;
   padding:0;
@@ -54,7 +67,7 @@ li > a{
 
   .icon{
     display: block;
-    color: black;
+    color: #212121;
     float: right;
     margin-right: 20px;
     margin-top: 5px;
