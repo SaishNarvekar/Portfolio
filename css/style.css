@@ -1,17 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-/* ::-webkit-scrollbar {
-  height: 5px;
-  width: 12px;
-  background: #E5E5E5;
-}
-
-::-webkit-scrollbar-thumb {
-  height: 12px;
-  width: 12px;
+::-webkit-scrollbar {
   background: #212121;
-} */
-
+}
 
 *{
   margin:0;
@@ -40,10 +31,11 @@ ul{
   
 }
 
-li{
-    float:left;
-    padding-left:50px;
-    font-size:1.3em;   
+li
+{
+  float:left;
+  padding-left:50px;
+  font-size:1.3em;   
 }
 
 li > a{
@@ -77,23 +69,23 @@ li > a{
 
 .container{
   background-color: #212121;
-  /* height: 100vh; */
 }
-
-
 
 img{
   width: 50%;
-  height: 100%;
   clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
   -webkit-clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
 }
-
 .caption{
+  top :0;
+  right : 0;
+  position: absolute;
   margin-top: 20%;
   float: right;
   margin-right: 200px; 
-  color:#E5E5E5
+  color:#E5E5E5;
+  width: 500px;
+  text-align: justify; 
 }
 
 .caption > span {
@@ -102,34 +94,37 @@ img{
   display: block
 }
 
-.caption > p {
-  width: 500px; 
-  text-align: justify;
+
+@media (max-width:1250px){
+  .caption{
+    width: 300px;
+  }
 }
 
 @media (max-width:600px){
+
+  .container{
+    height: auto;
+  }
+
   img{
   width: 100%;
-  height: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   }
 
   .caption{
-    margin-top: 0;
     float: none;
-    margin-right: 0px; 
-    color:#E5E5E5;
+    margin: 0 auto 0 auto;
+    padding: 30px;
+    width: 300px;
+    position: static;
     background-color: #212121;
+    
   }
 
   .caption > span {
     text-align: center;
   }
 
-  .caption > p {
-    width: 300px;
-    margin: 0 auto 0 auto;
-    padding-bottom: 55px;
-  }
 }
